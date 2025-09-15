@@ -23,13 +23,13 @@ body {
 
 .navbar .navbar-brand,
 .nav-link {
-    color: black!important;
+    color: black !important;
     font-weight: bolder;
     border-radius: 5px;
 }
 
 .nav-link:hover {
-     color: var(--p-color) !important;
+    color: var(--p-color) !important;
 }
 
 .nav-link-active {
@@ -81,9 +81,10 @@ footer {
     color: #ffffff;
 }
 
-footer .nav-link{
+footer .nav-link {
     color: #ffffff !important;
-}   
+}
+
 /* Contact Page */
 .contact-header {
     height: 50vh;
@@ -130,35 +131,48 @@ footer .nav-link{
 .d-none {
     display: none;
 }
+
 .about-header {
     background: linear-gradient(135deg, #0d6efd, #0dcaf0);
-  }
-  .team-card {
+}
+
+.team-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .team-card:hover {
+}
+
+.team-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 1rem 2rem rgba(0,0,0,0.15);
-  }
-  .btn-gradient {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn-gradient {
     background: linear-gradient(135deg, #0d6efd, #6610f2);
     color: #fff;
     border: none;
-  }
-  .btn-gradient:hover {
+}
+
+.btn-gradient:hover {
     background: linear-gradient(135deg, #6610f2, #0d6efd);
     color: #fff;
-  }
-#pgtpl{
+}
+
+#pgtpl {
     background-position: center;
     background-size: cover;
     height: 30px;
     display: none;
-    width:auto;
+    width: auto;
 }
 
+.carousel-item {
+    height: 350px !important;
+    border-radius: 20px;
+}
 
-
+.carousel-caption {
+    background: rgba(13, 27, 42, 0.6);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
 
 
 
@@ -177,8 +191,17 @@ footer .nav-link{
     .logo-text {
         display: none;
     }
-    #pgtpl{
+
+    #pgtpl {
         display: block;
+    }
+
+    .carousel-item {
+        height: 250px !important;
+        border-radius: 20px;
+    }
+    .btn-primary{
+        background-color: var(--p-color) !important;
     }
 }
 
