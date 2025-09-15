@@ -1,0 +1,190 @@
+/* Global Styles */
+:root {
+    --p-color: #0d6efd;
+    --text-color: #ffffff;
+    --p-btn: #3F72AF;
+    --s-btn: #DBE2EF;
+    /* white */
+    --thumb-color: #f8f9fa;
+    /* light gray */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #0d1b2a;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--thumb-color) !important;
+    position: sticky;
+}
+
+.navbar .navbar-brand,
+.nav-link {
+    color: black!important;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+     color: var(--p-color) !important;
+}
+
+.nav-link-active {
+    color: var(--p-color) !important;
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(3, 29, 58, 0.7), rgba(7, 43, 82, 0.7)),
+        url('../images/corporate-banner.png') center/cover no-repeat;
+    color: #ffffff;
+}
+
+.logo {
+    background: url(../images/logo.webp) center/ cover no-repeat;
+    height: 40px;
+    width: 50px;
+}
+
+/* Buttons */
+.hero .btn-primary {
+    background-color: transparent;
+}
+
+.btn-primary:hover {
+    background-color: var(--p-color);
+}
+
+/* Blog Cards */
+.blog-card {
+    border: none;
+    background: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(13, 27, 42, 0.2);
+}
+
+.card-title {
+    color: #0d1b2a;
+}
+
+/* Footer */
+footer {
+    background-color: #0d1b2a;
+    color: #ffffff;
+}
+
+footer .nav-link{
+    color: #ffffff !important;
+}   
+/* Contact Page */
+.contact-header {
+    height: 50vh;
+    background: linear-gradient(rgba(13, 27, 42, 0.8), rgba(13, 27, 42, 0.8)),
+        url('../img/contact-bg.jpg') center/cover no-repeat;
+    color: #ffffff;
+}
+
+.card {
+    border: none;
+}
+
+.carousel-item img {
+    height: 80vh;
+    /* Adjust height */
+    object-fit: cover;
+    /* Keep aspect ratio, crop if needed */
+}
+
+/* Base card style */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    /* lifts and slightly enlarges */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    /* bigger shadow */
+}
+
+/* Optional: smooth transition for inner elements */
+.card h5,
+.card p {
+    transition: color 0.3s ease;
+}
+
+.card h5 {
+    color: var(--p-color);
+    /* dark navy on hover */
+}
+
+.d-none {
+    display: none;
+}
+.about-header {
+    background: linear-gradient(135deg, #0d6efd, #0dcaf0);
+  }
+  .team-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.15);
+  }
+  .btn-gradient {
+    background: linear-gradient(135deg, #0d6efd, #6610f2);
+    color: #fff;
+    border: none;
+  }
+  .btn-gradient:hover {
+    background: linear-gradient(135deg, #6610f2, #0d6efd);
+    color: #fff;
+  }
+#pgtpl{
+    background-position: center;
+    background-size: cover;
+    height: 30px;
+    display: none;
+    width:auto;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:800px) {
+    .carousel-item img {
+        height: 50vh;
+        /* Adjust height */
+        object-fit: cover;
+        /* Keep aspect ratio, crop if needed */
+    }
+
+    .logo-text {
+        display: none;
+    }
+    #pgtpl{
+        display: block;
+    }
+}
+
+@media (max-width:1000px) {
+
+    .navbar {
+        border-radius: 10px !important;
+    }
+}
