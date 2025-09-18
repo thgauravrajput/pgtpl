@@ -89,7 +89,7 @@ footer .nav-link {
 .contact-header {
     height: 80vh;
     background: linear-gradient(rgba(13, 27, 42, 0.8), rgba(13, 27, 42, 0.8)),
-        url('../images/corporate-banner.png') center/cover no-repeat;
+        url('../images/pgtpl-banner.png') center/cover no-repeat;
     color: #ffffff;
 }
 
@@ -99,9 +99,7 @@ footer .nav-link {
 
 .carousel-item img {
     height: 80vh;
-    /* Adjust height */
     object-fit: cover;
-    /* Keep aspect ratio, crop if needed */
 }
 
 /* Base card style */
@@ -165,13 +163,18 @@ footer .nav-link {
 }
 
 .carousel-item {
-    height: 350px !important;
     border-radius: 20px;
 }
 
+ .carousel-item img {       
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+
 .carousel-caption {
-    background: rgba(13, 27, 42, 0.6);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    background: rgba(46, 40, 40, 0.2);
+    border-radius: 50px;
 }
 
 
@@ -181,14 +184,8 @@ footer .nav-link {
 
 
 @media (max-width:800px) {
-    .carousel-item img {
-        height: 50vh;
-        /* Adjust height */
-        object-fit: cover;
-        /* Keep aspect ratio, crop if needed */
-    }
 
-    .logo-text {
+    .logo-text ,.carousel-caption {
         display: none;
     }
 
@@ -196,18 +193,19 @@ footer .nav-link {
         display: block;
     }
 
-    .carousel-item {
-        height: 250px !important;
-        border-radius: 20px;
-    }
-    .btn-primary{
+    .btn-primary {
         background-color: var(--p-color) !important;
     }
 }
 
 @media (max-width:1000px) {
-
     .navbar {
         border-radius: 10px !important;
     }
+    .contact-header {
+    height: 70vh;
+    background: linear-gradient(rgba(13, 27, 42, 0.9), rgba(13, 27, 42, 0.9)),
+    url('../images/vertical-banner-blue.jpg') center/cover no-repeat;
+    color: #ffffff;
+}
 }
