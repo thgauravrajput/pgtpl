@@ -40,7 +40,7 @@ gsap.utils.toArray(".animate").forEach((card, i) => {
 function loadComponent(name){
 if(document.getElementById(name)){
 loader.remove('d-none')
-fetch(`/components/${name}.html`).then(res => res.text()).then(res => {
+fetch(`${name}.html`).then(res => res.text()).then(res => {
   document.getElementById(name).innerHTML = res;
   
 }).catch(e => {
