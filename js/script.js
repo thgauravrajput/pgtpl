@@ -1,7 +1,8 @@
-gsap.utils.toArray(".card").forEach((card, i) => {
+window.addEventListener('load',()=>{
+gsap.utils.toArray(".card,.animate-slide").forEach((card, i) => {
   gsap.from(card, {
     opacity: 0,
-    x: -20,
+    x: -200,
     scale: 0.6,
     duration: 0.5,
     delay: 0.2,
@@ -9,7 +10,6 @@ gsap.utils.toArray(".card").forEach((card, i) => {
       trigger: card,
       start: "top 80%",
       end: 'top 70%',
-      markers: true,
       scrub: 2
     }
   });
@@ -20,14 +20,15 @@ gsap.utils.toArray(".animate").forEach((card, i) => {
     opacity: 0,
     scale: 0.6,
     duration: 0.5,
-    delay: 0.2,
+    delay: i* 0.2,
     scrollTrigger: {
       trigger: card,
-      start: "top 100%",
-      markers: true,
+      start: "top 80%"
     }
   });
 });
+})
+
 
 // // main scripting 
 
@@ -45,7 +46,7 @@ fetch('navbar.html').then(res => res.text()).then(res => {
 }).catch(e => {
   main.innerHTML = `Something Went Wrong. Please Try Again Later`
 }).finally(() => {
-  //loader.add('d-none'); 
+loader.add('d-none'); 
 })
 }
 // }

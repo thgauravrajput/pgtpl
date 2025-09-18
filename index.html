@@ -16,28 +16,7 @@
 
 <body>
     <!-- Navbar -->
-    <div class="container-fluid position-fixed px-3 px-sm-5 w-100 d-flex mt-2 z-2 justify-content-center">
-        <nav class="navbar navbar-expand-lg shadow-md border border w-100 rounded-pill">
-            <div class="container-fluid opacity-100">
-                <a class="logo navbar-brand" href="index.html"></a>
-                <img src="./images/pgtpl.jpeg" id="pgtpl" alt="PGTPL">
-                <h3 class="logo-text fw-bolder text-black text-uppercase"><span class="text-primary">Punkel</span>
-                    Global Traders</h3>
-                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav gap-3 ms-auto">
-                        <li class="nav-item"><a class="nav-link nav-link-active" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html"> About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="join.html">Join Us</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
+    <div id="navbar"></div>
 
     <!-- loader Section -->
     <div style="pointer-events: none;"
@@ -57,9 +36,9 @@
         <header class="hero text-center text-light d-flex align-items-center">
             <div class="container">
                 <i class="bi bi-chat-dots-fill text-info fs-1"></i>
-                <h1 class="display-4 fw-bold">Welcome to PGTPL</h1>
-                <p class="lead">Sharing ideas, stories, and insights.</p>
-                <a href="#about" class="btn btn-primary btn-lg mt-3">Explore More</a>
+                <h1 class="display-4 fw-bold animate">Welcome to PGTPL</h1>
+                <p class="lead animate">Sharing ideas, stories, and insights.</p>
+                <a href="#about" class="btn animate btn-primary btn-lg mt-3">Explore More</a>
             </div>
         </header>
         <!-- Hero Section Ends-->
@@ -172,8 +151,8 @@
 
 
         <!-- Slider Section -->
-        <section class="py-5">
-            <div class="container-fluid">
+        <section class="py-5 animate-slide">
+            <div class="container">
                 <div class="row align-items-center g-5">
 
                     <!-- About Image -->
@@ -227,9 +206,9 @@
                     </div>
 
                     <!-- About Text -->
-                    <div class="col-lg-6">
-                        <h2 class="fw-bold mb-4"><i class="bi bi-building"></i> Who We Are</h2>
-                        <p class="text-muted">
+                    <div class="col-lg-6 animate-slide rounded-4 p-3 shadow-sm bg-white">
+                        <h2 class="fw-bold mb-4"><i class="bi bi-building "></i> Who We Are</h2>
+                        <p class="text-muted ">
                             We are a passionate team dedicated to delivering exceptional solutions that make a
                             difference.
                             Our journey started with a simple vision: to bring innovation, creativity, and reliability
@@ -245,7 +224,7 @@
                         </p>
 
                         <!-- Mission / Vision Icons -->
-                        <div class="row mt-4">
+                        <div class="row mt-4 animate-slide">
                             <div class="col-md-6 mb-3">
                                 <div class="d-flex align-items-start">
                                     <i class="bi bi-bullseye text-primary fs-3 me-3"></i>
@@ -257,7 +236,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 mb-3">
+                            <div class="col-md-6 mb-3 animate-slide">
                                 <div class="d-flex align-items-start">
                                     <i class="bi bi-lightbulb text-warning fs-3 me-3"></i>
                                     <div>
@@ -271,7 +250,7 @@
                         </div>
 
                         <!-- CTA Button -->
-                        <a href="contact.html" class="btn nav-link btn-gradient btn-lg mt-3 p-2">
+                        <a href="contact.html" class="btn animate-slide nav-link btn-gradient btn-lg mt-3 p-2">
                             <i class="bi bi-telephone-forward"></i> Contact Us
                         </a>
                     </div>

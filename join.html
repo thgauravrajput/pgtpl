@@ -16,28 +16,7 @@
 
 <body>
     <!-- Navbar -->
-    <div class="container-fluid position-fixed px-3 px-sm-5 w-100 d-flex mt-2 z-2 justify-content-center">
-        <nav class="navbar navbar-expand-lg shadow-md border border w-100 rounded-pill">
-            <div class="container-fluid opacity-100">
-                <a class="logo navbar-brand" href="index.html"></a>
-                <img src="./images/pgtpl.jpeg" id="pgtpl" alt="PGTPL">
-                <h3 class="logo-text fw-bolder text-black text-uppercase"><span class="text-primary">Punkel</span>
-                    Global Traders</h3>
-                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav gap-3 ms-auto">
-                        <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html"> About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                        <li class="nav-item"><a class="nav-link nav-link-active" href="join.html">Join Us</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
+    <div id="navbar"></div>
 
     <!-- loader Section -->
     <div style="pointer-events: none;" class="position-fixed d-none vh-100 z-3 bg-dark opacity-50 container-fluid d-flex justify-content-center align-items-center " id="loader">
@@ -55,8 +34,8 @@
 <!-- Join Us Header -->
 <header class="contact-header text-center text-light d-flex align-items-center bg-primary py-5 mb-5">
   <div class="container">
-    <h1 class="fw-bold display-4"><i class="bi bi-people-fill text-warning"></i>Join Us</h1>
-    <p class="lead">Be part of our team and grow with us.</p>
+    <h1 class="fw-bold display-4 animate"><i class="bi bi-people-fill  text-warning"></i>Join Us</h1>
+    <p class="lead animate">Be part of our team and grow with us.</p>
   </div>
 </header>
 
@@ -66,21 +45,21 @@
   <div class="container text-center">
     <h2 class="fw-bold mb-4"><i class="bi bi-stars"></i> Why Work With Us?</h2>
     <div class="row g-4">
-      <div class="col-md-4">
+      <div class="col-md-4 animate-slide">
         <div class="p-4 shadow rounded-4 h-100 bg-white">
           <i class="bi bi-rocket-takeoff fs-1 text-primary mb-3"></i>
           <h5 class="fw-bold">Innovation</h5>
           <p class="text-muted small">Work on cutting-edge projects that shape the future.</p>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 animate-slide">
         <div class="p-4 shadow rounded-4 h-100 bg-white">   
           <i class="bi bi-people fs-1 text-success mb-3"></i>
           <h5 class="fw-bold">Collaboration</h5>
           <p class="text-muted small">Be part of a diverse and supportive global team.</p>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 animate-slide">
         <div class="p-4 shadow rounded-4 h-100 bg-white">
           <i class="bi bi-award fs-1 text-warning mb-3"></i>
           <h5 class="fw-bold">Growth</h5>
@@ -139,7 +118,7 @@
 </section>
 
 <!-- Call To Action -->
-<section class="py-5 btn-gradient text-light text-center">
+<section class="py-5 btn-gradient text-light text-center animate-slide">
   <div class="container">
     <h2 class="fw-bold mb-3">Ready to start your journey with us?</h2>
     <p class="lead mb-4">Join a workplace where your ideas matter and your career grows.</p>

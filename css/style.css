@@ -11,13 +11,13 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #ffffff;
+    background-color: whitesmoke;
     color: #0d1b2a;
 }
 
 /* Navbar */
 .navbar {
-    background-color: var(--thumb-color) !important;
+    background-color: var(--text-color) !important;
     position: sticky;
 }
 
@@ -38,7 +38,7 @@ body {
 
 /* Hero Section */
 .hero {
-    height: 90vh;
+    height: 80vh;
     background: linear-gradient(rgba(3, 29, 58, 0.7), rgba(7, 43, 82, 0.7)),
         url('../images/corporate-banner.png') center/cover no-repeat;
     color: #ffffff;
@@ -87,9 +87,9 @@ footer .nav-link {
 
 /* Contact Page */
 .contact-header {
-    height: 50vh;
+    height: 80vh;
     background: linear-gradient(rgba(13, 27, 42, 0.8), rgba(13, 27, 42, 0.8)),
-        url('../img/contact-bg.jpg') center/cover no-repeat;
+        url('../images/corporate-banner.png') center/cover no-repeat;
     color: #ffffff;
 }
 
